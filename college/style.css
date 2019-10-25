@@ -4,6 +4,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+.bg-dark1 {
+  background-color: #333;
+}
+
 .container {
   width: 90%;
   height: auto;
@@ -18,15 +26,9 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 10px;
   background-color: #333;
   color: white;
   text-align: center;
-}
-
-h1 {
-  font-size: 50px;
 }
 
 .hero-image {
@@ -62,6 +64,7 @@ li a {
 
 li a:hover {
   background-color: #111;
+  text-decoration: none;
 }
 
 ul {
