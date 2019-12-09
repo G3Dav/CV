@@ -9,6 +9,7 @@ body {
   background-color: lightgray;
   /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
   font-family: Roboto, sans-serif;
+  font-size: 1rem;
 }
 
 .bg-dark1 {
@@ -94,7 +95,7 @@ footer {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .shadow {
