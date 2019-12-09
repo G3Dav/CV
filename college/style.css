@@ -1,35 +1,104 @@
+html{ height:100%; }
+
 body {
   margin: 0;
+  height:100%;
+  position: relative;
+  display: table;
+    width: 100%;
   background-color: lightgray;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 50px;
+  /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+  font-family: Roboto, sans-serif;
 }
 
 .bg-dark1 {
   background-color: #333;
 }
 
-.container {
+nav {
+  position: fixed;
+  padding: 0.25rem auto 0.25rem;
+  top:0;
+}
+.nav .search-container {
+  float: right;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 2px;
+  font-size: 15px;
+  border: none;
+}
+
+nav .navbar-nav li a{
+  color: #fff !important;
+  }
+
+
+  nav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 2px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.fa-search {
+  font-size: 15px;
+}
+
+.submit {
+  height: 34.5px;
+}
+
+.container-fluid {
   width: 90%;
   height: auto;
-  margin-left: auto ;
-  margin-right: auto ;
+  margin:1rem auto;
   text-align: center;
   padding: 18px 18px;
   background-color: white;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.section-1 {
+  color:black;
+  margin: auto 2rem;
+
+}
+
+.section-2 {
+  color:black;
+  margin: 2rem 2rem;
+
+}
+
+
+footer {
+  overflow: hidden;
+  display: table;
   width: 100%;
+  /* bottom: 0; */
+  width: 100%;
+  padding: 5px;
   background-color: #333;
   color: white;
   text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .hero-image {
@@ -51,13 +120,13 @@ h1 {
   color: white;
 }
 
+
 li {
   float: left;
 }
 
 li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -75,3 +144,107 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
+
+/* This is the Experimental Video Overlay */
+
+.video-bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	min-width: 100%;
+	max-height: 100vh;
+	width: auto;
+	display: block;
+  object-fit:cover;
+
+	opacity: 1;
+
+    -moz-animation: fade-out 2s ease-in forwards; /* Firefox */
+    -webkit-animation: fade-out 2s ease-in forwards; /* Safari and Chrome */
+    -o-animation: fade-out 2s ease-in forwards; /* Opera */
+    animation: fade-out 2s ease-in forwards;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+	}
+
+  @media screen and (max-width: 600px) {
+.nav .search-container {
+    float: none;
+  }}
+
+
+  @keyframes fade-in {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-moz-keyframes fade-in { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-webkit-keyframes fade-in { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-o-keyframes fade-in { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+  }​
+  @keyframes fade-out {
+    from {
+        opacity:1;
+        pointer-events: all;
+    }
+    to {
+        opacity:0;
+        pointer-events: none;
+    }
+  }
+  @-moz-keyframes fade-out { /* Firefox */
+    from {
+        opacity:1;
+        pointer-events: all;
+    }
+    to {
+        opacity:0;
+        pointer-events: none;
+    }
+  }
+  @-webkit-keyframes fade-out { /* Safari and Chrome */
+    from {
+        opacity:1;
+        pointer-events: all;
+    }
+    to {
+        opacity:0;
+        pointer-events: none;
+    }
+  }
+  @-o-keyframes fade-out { /* Opera */
+    from {
+        opacity:1;
+        pointer-events: all;
+    }
+    to {
+        opacity: 0;
+        pointer-events: none;
+    }
+  }
+  /* Test */
